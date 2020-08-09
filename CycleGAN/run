@@ -1,0 +1,1 @@
+python3 train.py --X=data/tfrecords/man.tfrecords --Y=data/tfrecords/woman.tfrecords --load_model 20181031-1713

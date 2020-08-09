@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/trans.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/poem.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waitMe.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/button.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/waitMe.css" />
+    <title>人脸性别转换</title>
+</head>
+<body style="text-align:center;">
+    <div style="text-align: center;">
+        <h2>人脸性别转换</h2>
+    </div>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" style="margin-top:20px;"/>
+        <br>
+        <input type="submit" value="上传" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <div id="images">
+        <div id="original-image">点击上方的“选择文件”，然后进行“上传”</div>
+        <div>
+            <a class="push_button blue" id="btn-run-man2woman" href="#">男变女</a>
+            <a class="push_button red" id="btn-run-woman2man" href="#">女变男</a>
+        </div>
+        <div id="changed-image" class=".waitMe_container"></div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div style="width:600px;margin-left:auto;margin-right:auto;">
+        <h2>古诗生成器</h2>
+
+
+    <p>
+            请输入指定文字生成藏头诗：<input id="prime_input" type="text" >
+    </p>
+    </div>
+
+    <div style="width:222px;margin-left:auto;margin-right:auto;">
+            <a class="push_button blue" id="btn-run-free" href="#">自由生成</a>
+            <a class="push_button blue" id="btn-run-prime" href="#">藏头诗生成</a>
+
+    </div>
+    <div id="poem_container" style="width:600px;margin-left:auto;margin-right:auto;">
+
+    </div>
+
+    <hr>
+    <div style="text-align:center">
+    <h2>更多好玩的项目</h2>
+        <table border="0" cellspacing="0" style="margin:auto">
+            <tr>
+                <th><a href="https://ai.binwang.me/couplet/">AI对联</a></th>
+                <th><a href="https://magic-sketchpad.glitch.me/">魔法画板</a></th>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
